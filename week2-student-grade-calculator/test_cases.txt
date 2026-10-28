@@ -1,0 +1,23 @@
+Week 2 Student Grade Calculator — manual test cases
+
+Valid grade boundaries:
+- 0   -> F
+- 59  -> F
+- 60  -> D
+- 69  -> D
+- 70  -> C
+- 79  -> C
+- 80  -> B
+- 89  -> B
+- 90  -> A
+- 100 -> A
+
+Input validation:
+- -1: show the range error and ask again.
+- 101: show the range error and ask again.
+- hello: show the whole-number hint and ask again.
+- 85.5: show the whole-number hint and ask again.
+- empty name: ask for the name again.
+
+Example walkthrough: enter Priya, then 85. Expected grade B and an encouraging
+"Very Good! Keep it up!" message.
