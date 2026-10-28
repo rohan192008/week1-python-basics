@@ -1,5 +1,14 @@
 """Ask for a student's name and marks, then display a friendly grade."""
 
+# Example run:
+# Enter student name: Priya
+# Enter marks (0-100): 85
+#
+# 📊 RESULT FOR PRIYA:
+# Marks: 85/100
+# Grade: B
+# Message: Very Good! Keep it up! 👍
+
 
 def grade_for(marks):
     """Return the letter grade for a mark from 0 through 100."""
