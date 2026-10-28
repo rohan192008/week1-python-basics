@@ -1,0 +1,18 @@
+# Manual validation cases
+
+Dataset: data/sales_data.csv
+
+1. Normal dataset: expected 100 valid records, ₹12,365,048.00 revenue, and Laptop as top product by revenue.
+2. Missing file: temporarily rename sales_data.csv; expected a clear "Could not find the dataset" message and a non-zero exit.
+3. Missing required column: remove the Region header/column from a temporary CSV; expected an error naming the missing column.
+4. Duplicate row: append a duplicate record to a temporary CSV; duplicate must be removed from analysis.
+5. Invalid date or text quantity: the invalid record must be excluded during cleaning.
+6. Negative quantity or price: the invalid record must be excluded.
+7. Successful run: expect product_revenue.png, monthly_revenue.png, regional_revenue.png, and report/analysis_report.md.
+
+Baseline figures for the supplied dataset:
+- Rows: 100; columns: 7; missing cells: 0; duplicate rows: 0.
+- Total revenue: ₹12,365,048.00; quantity: 478.
+- Top product by revenue: Laptop (₹3,889,210.00).
+- Highest revenue month: March 2024 (₹4,485,006.00).
+- Highest revenue region: North (₹3,983,635.00).
